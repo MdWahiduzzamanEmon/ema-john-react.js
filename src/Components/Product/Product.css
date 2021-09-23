@@ -1,0 +1,26 @@
+.product-style{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.details-section>p{
+    color: blue;
+}
+.product-flex{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+.product-flex ul{
+    color: rgb(100, 96, 96);
+}
+.product-flex span{
+    color: rgb(255, 187, 0);
+}.cartBtn{
+    background-color: rgb(255, 187, 0);
+    border:1px solid rgb(168, 150, 150);
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
