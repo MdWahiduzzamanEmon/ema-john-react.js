@@ -2,6 +2,9 @@
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-right: 5px;
 }
 .details-section>p{
     color: blue;
