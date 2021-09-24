@@ -12,3 +12,19 @@
 .cart-detials{
     margin-left: 5px;
 }
+.inputField{
+    background: rgb(34, 33, 33);
+    padding: 20px;
+    text-align: center;
+}
+.inputField input{
+    width: 75%;
+    padding:8px;
+    color: black;
+}
+.inputField .FontAwesomeIcon{
+    margin-left: 5px;
+    display: inline;
+    color: #fff;
+    font-size: 20px;
+}

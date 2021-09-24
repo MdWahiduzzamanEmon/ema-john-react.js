@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar,faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import './Product.css'
+import Rating from 'react-rating';
 
 const Product = (props) => {
     // console.log(props);
@@ -17,17 +18,20 @@ const Product = (props) => {
             <div>
               <h4>${price}</h4>
               <p>only {stock} left in stock - order soon</p>
-              <button onClick={()=>props.handaleToCart(props.product)} className="cartBtn">
+              <button
+                onClick={() => props.handaleToCart(props.product)}
+                className="cartBtn"
+              >
                 <FontAwesomeIcon icon={faShoppingCart} /> Add to cart
               </button>
             </div>
             <div>
-              <p>
-                Rating: {star}
-                <span>
-                  <FontAwesomeIcon icon={faStar} />
-                </span>
-              </p>
+              <Rating
+                initialRating={star}
+                readonly
+                emptySymbol="far fa-star"
+                fullSymbol="fas fa-star"
+              ></Rating>
               <h4>Features</h4>
               <ul>
                 {features.map((feature) => (

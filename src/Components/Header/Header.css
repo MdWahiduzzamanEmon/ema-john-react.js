@@ -20,18 +20,4 @@
 .nav-bar a:hover{
     background: lightgray;
 }
-.inputField{
-    background: rgb(34, 33, 33);
-    padding: 20px;
-}
-.inputField input{
-    width: 75%;
-    padding:8px;
-    color: black;
-}
-.inputField .FontAwesomeIcon{
-    margin-left: 5px;
-    display: inline;
-    color: #fff;
-    font-size: 20px;
-}
+
